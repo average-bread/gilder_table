@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "gildertable",
+  "version": "${version}",
+
+  "name": "Gilder Table",
+  "description": "Adds a block that can put gold on some items",
+  "authors": [
+    "Bread (with a lot of help)"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+	"icon": "icon.png",
+  "license": "CC0-1.0",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+			"cursedbread.gildertable.GilderMod"
+    ],
+		"beforeGameStart": [
+			"cursedbread.gildertable.GilderMod"
+		],
+		"recipesReady": [
+			"cursedbread.gildertable.GilderCraft"
+		]
+	},
+  "mixins": [
+      "gildertable.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3"
+  },
+  "suggests": {
+  }
+}
